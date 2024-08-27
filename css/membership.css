@@ -262,6 +262,13 @@ main {
     padding: 2rem;
 }
 
+@media screen and (max-width:576px) {
+    main {
+        margin:1rem auto;
+        padding:1rem;
+    }
+}
+
 .mem-intro {
     background: rgba(167,193,255,0.4);
     line-height: 1.5rem;
