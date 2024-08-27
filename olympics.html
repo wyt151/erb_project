@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/UI/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/UI/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/UI/favicon-16x16.png">
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- 引入icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/olympics-index.css">
+    <title>Olympics</title>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="headerNborder">
+        <header class="header">
+            <div class="logo">
+            <a href="./index.html" class="nav-logo">
+                <img src="./images/UI/logo_4c.svg" alt="logo">
+            </a></div>
+            <input type="checkbox" id="burger-menu" class="burger-menu">
+            <label for="burger-menu" class="burger-icon"></label>
+            <nav class="nav">
+                <a href="./index.html" class="nav-link">首頁</a>
+                <a href="./aboutus.html" class="nav-link">介紹本會</a>
+                <a href="./course-info.html" class="nav-link">課程介紹</a>
+                <a href="./facilities.html" class="nav-link">本會設施</a>
+                <div class="nav-item dropdown">
+                    <a href="./olympics.html" class="nav-link dropdown-toggle" type="button" data-toggle="dropdown" ">奧運相關</a>
+                    <div class="dropdown-menu" style="background-color: #E2BCEB;">
+                        <a href="#" class="dropdown-item" style="color: #A049B0;">2024奧運賽事首頁</a>
+                        <a href="./olympics-swim.html" class="dropdown-item" style="color: #A049B0;">游泳</a>
+                        <a href="./olympics-fencing.html" class="dropdown-item" style="color: #A049B0;">劍擊</a>
+                        <a href="./olympics-badminton.html" class="dropdown-item" style="color: #A049B0;">羽毛球</a>
+                    </div>
+                    </div>
+                    <a href="./login.html" class="btn" >會員登入</a>
+            </nav>
+        </header>
+        <div class="header-border"></div>
+    </div>
+        <!-- 首图部分:hero -->
+        <section class="hero" id="home">
+            <div class="hero-banner">
+                <h1>2024年奧運風采</h1>
+                <p>通過與文化奧運合作舉辦的文化活動和節目參與奧運相關的慶祝活動。這種「節日」般的氛圍將使來自各界的人們聚集在一起，共同慶祝巴黎奧運會。</p>
+                <a href="#tours" class="btn hero-btn">探索奥運</a>
+            </div>
+        </section>
+        <!-- 三个项目 -->
+        <section class="section services" id="services">
+            <div class="section-title">
+                <h2>運動項目</h2>
+            </div>
+            <div class="section-center services-center">
+                <article class="service">
+                    <span class="service-icon">
+                        <img src="https://olympics.com/images/static/sports/pictograms/v2/swm.svg" alt="swim" >
+                        <h4 class="service-title">游泳</h4>
+                    </span>
+                    <div class="service-text">
+                        <p>奧運會的游泳比賽在長度為50米的泳池裏進行。奧運會游泳比賽分為個人賽和接力賽，包含四大泳姿的比賽——蛙泳、蝶泳、仰泳和爬泳；爬泳主要運用在自由泳比賽中，所以爬泳也可以稱為自由泳。男女混合泳接力比賽為第五項賽事，包括所有四種泳姿，運動員要在不同泳姿之間切換。根據游泳比賽距離的不同，運動員所需要的技術也不同。總的來說，爆發力、耐力、體力和技巧都是游泳運動員必須具備的基本素質。</p>
+                    </div>
+                </article>
+                <article class="service">
+                    <span class="service-icon">
+                        <img src="https://olympics.com/images/static/sports/pictograms/v2/fen.svg" alt="fencing" >
+                        <h4 class="service-title">劍擊</h4>
+                    </span>
+                    <div class="service-text">
+                        <p>劍擊比賽中，兩位運動員各自手持一劍，面對面用劍尖刺向對手的身體，刺中有效部位即可得分。根據使用武器的不同，劍擊可分為重劍、花劍和佩劍比賽，共包含12個比賽項目。</p>
+                    </div>
+                </article>
+                <article class="service">
+                    <span class="service-icon">
+                        <img src="https://olympics.com/images/static/sports/pictograms/v2/bdm.svg" alt="badminton" >
+                        <h4 class="service-title">羽毛球</h4>
+                    </span>
+                    <div class="service-text">
+                        <p>羽毛球是一種在室內進行的球拍運動，對陣雙方可以是單人或者雙人。比賽場地為長方形，中間通過球網相隔。羽毛球是由球托和羽毛組成的圓錐形球體。運動員要運用各種技術，讓球掉落在對方半場有效區域內，或迫使對方失誤而得分。每次發球都將以得分/丟分而結束。比賽為三局兩勝制，每局比賽先得到21分者獲勝。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    <br>
+    <!--* 三个运动项目(图片加精选赛事) -->
+    <section class="section" id="tours">
+        <div class="section-title">
+            <h2>賽事項目</h2>
+        </div>
+        <div class="section-center tours-center">
+                <!--* 游泳项目 -->
+                <article class="tour-card">
+                    <div class="tour-img-container">
+                        <a href="./olympics-swim.html" target="_blank">
+                            <img src="./images/olympics01.jpg" alt="swimming"  width="350" height="300" >
+                        </a>
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-title">
+                            <h4>游泳</h4>
+                        </div>
+                        <div class="tour-footer">
+                            <p><span><i class="fa fa-map"></i></span>賽事簡報</p>
+                            <p>男子100米自由泳</p>
+                            <p>中國潘展樂獲得金牌，時間為46.40s</p>
+                        </div>
+                    </div>
+                </article>
+                <!--* 击剑项目 -->
+                <article class="tour-card">
+                    <div class="tour-img-container">
+                        <a href="./olympics-fencing.html" target="_blank">
+                            <img src="./images/olympics02.jpg" alt="fencing" width="350" height="300">
+                        </a>
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-title">
+                            <h4>劍擊</h4>
+                        </div>
+                        <div class="tour-footer">
+                            <p><span><i class="fa fa-map"></i></span>賽事簡報</p>
+                            <p>7月28日 周日·金牌賽</p>
+                            <p>中國香港江旻憓獲勝，比分為13-12</p>
+                        </div>
+                    </div>
+                </article>
+                <!--* 羽毛球项目-->
+                <article class="tour-card">
+                    <div class="tour-img-container">
+                        <a href="./olympics-badminton.html" target="_blank">
+                            <img src="./images/olympics03.jpg" alt="badminton" width="350" height="300">
+                        </a>
+                    </div>
+                    <div class="tour-info">
+                        <div class="tour-title">
+                            <h4>羽毛球</h4>
+                        </div>
+                        <div class="tour-footer">
+                            <p><span><i class="fa fa-map"></i></span>賽事簡報</p>
+                            <p>8月2日 周五·混合雙打金牌賽</p>
+                            <p>中國鄭思維/黃雅瓊獲得金牌，比分為21-21</p>
+                        </div>
+                    </div>
+                </article>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>聯絡本會: 2014 2014&nbsp;</p>
+                <p class="middle-contect">
+                    <a href="mailto:info@ochk.hk" class="email-link">
+                    info@ochk.hk</a>
+                </p>
+                <div class="footer-icons">
+                        <a href="#" class="footer-icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="footer-icon"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" class="footer-icon"><i class="fa-brands fa-twitter"></i></a>
+                    
+                </div>
+            </div>
+            <p class="copyright">copyright &copy; 
+                2024 OCHK all right reserved</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim" crossorigin="anonymous"></script>
+</body>
+</html>

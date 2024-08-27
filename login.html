@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/UI/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/UI/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/UI/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/login.css">
+    <title>OCHK Member</title>
+</head>
+<body>
+    <div class="headerNborder">
+        <header class="header">
+            <div class="logo"><a href="./index.html" class="nav-logo">
+                <img src="./images/UI/logo_4c.svg" alt="logo">
+            </a></div>
+            <input type="checkbox" id="burger-menu" class="burger-menu">
+            <label for="burger-menu" class="burger-icon"></label>
+            <nav class="nav">
+                <a href="./index.html" class="nav-link">首頁</a>
+                <a href="./aboutus.html" class="nav-link">介紹本會</a>
+                <a href="./course-info.html" class="nav-link">課程介紹</a>
+                <a href="./facilities.html" class="nav-link">本會設施</a>
+                <a href="./olympics.html" class="nav-link">奧運相關</a>
+                <a href="./login.html" class="btn" >會員登入</a>
+            </nav>
+        </header>
+        <div class="header-border"></div>
+    </div>
+    <main class="main">
+    <div class="login-page">
+        <div class="login-container login-title">
+            <!-- <h2>登入</h2> -->
+            <img src="./images/UI/logo_blue.svg">
+        </div>
+        <form class="login-container login-form" action="#">
+            <div class="form-group input-group">
+                <!-- <label for="login-name">會員編號</label> -->
+                <!-- <i class="fa-regular fa-user"></i> -->
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="login-name" name="login-name" placeholder="會員編號" required />
+            </div>
+            <div class="form-group input-group">
+                <!-- <label for="login-password">密碼</label> -->
+                <i class="fa-solid fa-key"></i>
+                <input type="password" id="login-password" name="login-password" placeholder="密碼" required />
+            </div>
+            <div class="form-group forget-pw">
+                <a href="#">忘記密碼?</a>
+            </div>
+            <div class="form-group">
+                <button class="login-btn" id="login-btn">
+                    <span class="btn-text">登入</span> 
+                </button>
+            </div>
+        </form>
+        <div class="login-container login-reg">
+            <a href="./membership.html">申請入會</a>
+
+        </div>
+    </div>     
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>聯絡本會: 2014 2014</p>
+                <p class="middle-contect">
+                    <a href="mailto:info@ochk.hk" class="email-link">
+                    info@ochk.hk</a>
+                </p>
+                <div class="footer-icons">
+                        <a href="#" class="footer-icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="footer-icon"><i class="fa-brands fa-square-instagram"></i></a>                   
+                        <a href="#" class="footer-icon"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <p class="copyright">copyright &copy; 
+                2024 OCHK all right reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

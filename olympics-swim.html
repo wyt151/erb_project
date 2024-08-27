@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/UI/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/UI/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/UI/favicon-16x16.png">
+    <!-- 引入bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- 引入icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 引入lib -->
+ <link rel="stylesheet" href="./lib/animate/animate.min.css">
+ <link rel="stylesheet" href="./lib/owlcarousel/assets/owl.carousel.min.css">
+ <link rel="stylesheet" href="./lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css">
+    <!-- 引入谷歌字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/olympics-swim.css">
+    <title>Olympics Swim</title>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <div class="headerNborder">
+        <header class="header">
+            <div class="logo">
+            <a href="./index.html" class="nav-logo">
+                <img src="./images/UI/logo_4c.svg" alt="logo">
+            </a></div>
+            <input type="checkbox" id="burger-menu" class="burger-menu">
+            <label for="burger-menu" class="burger-icon"></label>
+            <nav class="nav">
+                <a href="./index.html" class="nav-link">首頁</a>
+                <a href="./aboutus.html" class="nav-link">介紹本會</a>
+                <a href="./course-info.html" class="nav-link">課程介紹</a>
+                <a href="./facilities.html" class="nav-link">本會設施</a>
+                <div class="nav-item dropdown">
+                    <a href="./olympics.html" class="nav-link dropdown-toggle" type="button" data-toggle="dropdown" ">奧運相關</a>
+                    <div class="dropdown-menu" style="background-color: #E2BCEB;">
+                        <a href="./olympics.html" class="dropdown-item" style="color: #A049B0;">2024奧運賽事首頁</a>
+                        <a href="./olympics-swim.html" class="dropdown-item" style="color: #A049B0;">游泳</a>
+                        <a href="./olympics-fencing.html" class="dropdown-item" style="color: #A049B0;">劍擊</a>
+                        <a href="./olympics-badminton.html" class="dropdown-item" style="color: #A049B0;">羽毛球</a>
+                    </div>
+                    </div>
+                    <a href="./login.html" class="btn" >會員登入</a>
+            </nav>
+        </header>
+        <div class="header-border"></div>
+    </div>
+<!-- ?主图轮播部分 -->
+<div id="mainCarousel" class="carousel slide" data-ride="carousel">
+    <!-- ? 主图滑片 -->
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#mainCarousel" data-slide-to="0"></li>
+            <li data-target="#mainCarousel" data-slide-to="1"></li>
+            <li data-target="#mainCarousel" data-slide-to="2"></li>                        
+        </ol> 
+    <div class="carousel-inner">
+<!-- ?第一张轮播图 -->
+        <div class="carousel-item active">
+            <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w2440/f_auto/primary/iomgpeiajfzjzk4ej6vw" class="d-block w-100" alt="dali sea">
+            <div class="carousel-caption d-md-block">
+                <h1>男子100米自由泳</h1>
+                <p style="color: aliceblue; font-size: large;">潘展樂刷新世界紀錄，中國隊收獲本屆奧運會游泳首金</p>
+                <a href="#container02" class="btn btn-primary" style="background-color: #686a58; border: black;">探索更多</a>
+            </div>
+        </div>
+        <!-- ?第二张轮播图 -->
+        <div class="carousel-item">
+            <img src="https://www.news.gov.hk/chi/2024/08/20240801/20240801_025551_213/images/20240801044832738.jpg" class="d-block w-100" alt="snow mountain">
+            <div class="carousel-caption d-md-block">
+                <h1>女子100米自由泳</h1>
+                <p style="color: aliceblue; font-size: large;">再傳捷報： 何詩蓓在巴黎奧運女子100米自由泳賽事為香港贏得銅牌。 （中國香港體育協會暨奧林匹克委員會提供相片）</p>
+                <a href="#container03" class="btn btn-primary" style="background-color: #c7e4f6; border: rgb(215, 242, 245)">探索更多</a>
+            </div>
+        </div>
+        <!-- ?第三张轮播图 -->
+        <div class="carousel-item">
+            <img src="http://sports.news.cn/20240806/f40a01b6f2e64a08a1b3336b0f64eda9/eBIgZBfKuU9XAWYC.jpg" class="d-block w-100" alt="snow mountain">
+            <div class="carousel-caption d-md-block">
+                <h1>男子200米自由泳决赛</h1>
+                <p style="color: aliceblue; font-size: large;">馬爾尚個人項目4戰4勝4破奧運紀錄</p>
+                <a href="#container01" class="btn btn-primary" style="background-color: #b4fff9; border: black">探索更多</a>
+            </div>
+        </div>
+    </div>
+    <!-- !轮播导航箭头 -->
+    <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!-- !奖牌榜 -->
+<section class="medal-tally py-5">
+    <div class="container wow fadeInUp">
+        <h2 class="text-center mb-4">游泳獎牌榜</h2>
+        <table class="table table-striped text-center" style="background-color: #E2BCEB;">
+            <thead>
+                <tr>
+                    <th scope="col">國家/地區</th>
+                    <th scope="col"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" id="Star-Medal-1--Streamline-Plump-Gradient" height="30" width="30" stroke-width="1"><desc>Star Medal 1 Streamline Icon: https://streamlinehq.com</desc><g id="star-medal-1--ribbon-reward-like-social-rating-media"><path id="Union" fill="url(#paint0_linear_7979_1086)" fill-rule="evenodd" d="m34.9923 1.13967-.0571.0894c-.3454.54023-.8524 1.32859-1.4957 2.31588-1.2869 1.97508-3.1175 4.74373-5.2893 7.91315l-.1329.1938c-1.1973-.0912-2.5465-.1519-4.0174-.1519-1.4708 0-2.82.0607-4.0173.1519l-.1329-.1938c-2.1718-3.16942-4.0024-5.93807-5.2893-7.91315-.6433-.98729-1.1503-1.77565-1.4957-2.31588l-.0571-.08942C15.0647.850562 18.6602.5 23.9999.5c5.3398 0 8.9353.350576 10.9924.63967ZM4.9391 16.5852c-.61186-1.0004-.70757-2.2222-.27814-3.3134C7.34934 6.44045 10.0001 2 10.0001 2s3.961 6.29695 9.4176 14.106c-4.1285 1.1172-7.6517 3.7073-9.97065 7.1716-2.03427-2.7608-3.58988-5.1914-4.50795-6.6924Zm33.6139 6.6925c2.0344-2.7608 3.59-5.1915 4.5081-6.6925.6119-1.0004.7076-2.2222.2781-3.3134C40.6509 6.44045 38.0001 2 38.0001 2s-3.961 6.29697-9.4176 14.1061c4.1284 1.1171 7.6516 3.7073 9.9705 7.1716ZM24 18.5c-8.0081 0-14.5 6.4919-14.5 14.5 0 8.0081 6.4919 14.5 14.5 14.5 8.0081 0 14.5-6.4919 14.5-14.5 0-8.0081-6.4919-14.5-14.5-14.5Zm1.1096 6.6393 1.8384 3.5444 3.8921.7664c.952.1874 1.3367 1.3408.688 2.0622L28.77 34.5798l.507 4.1085c.1221.9895-.9067 1.7168-1.7988 1.2715L24 38.2237l-3.4782 1.7361c-.8921.4453-1.9209-.282-1.7988-1.2715l.507-4.1085-2.7581-3.0675c-.6487-.7214-.264-1.8748.688-2.0622l3.8921-.7664 1.8384-3.5444c.4664-.8993 1.7528-.8993 2.2192 0Z" clip-rule="evenodd"></path></g><defs><linearGradient id="paint0_linear_7979_1086" x1="43.471" x2="-6.62" y1="47.51" y2="24.005" gradientUnits="userSpaceOnUse"><stop stop-color="#FF51E3"></stop><stop offset="1" stop-color="#1B4DFF"></stop></linearGradient></defs></svg>金牌</th>
+                    <th scope="col"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 30 30" id="Star-Medal--Streamline-Plump" height="30" width="30"><desc>Star Medal Streamline Icon: https://streamlinehq.com</desc><g id="star-medal--ribbon-reward-like-social-rating-media"><path id="Union" fill="#8fbffa" d="M8.111541666666666 9.899875a0.90625 0.90625 0 0 0 0.8554999999999999 -0.08760416666666665l0.0072499999999999995 -0.0030208333333333333c0.06827083333333334 -0.027187499999999996 0.2513333333333333 -0.08881249999999999 0.6283333333333333 -0.15708333333333332 0.7546041666666667 -0.13714583333333333 2.2046041666666665 -0.2875833333333333 4.897374999999999 -0.2875833333333333s4.1427708333333335 0.1504375 4.897979166666666 0.2875833333333333c0.3763958333333333 0.06827083333333334 0.5594583333333333 0.12989583333333332 0.6283333333333333 0.15708333333333332l0.0060416666666666665 0.0030208333333333333A0.90625 0.90625 0 0 0 21.447916666666664 9.0625V2.7429166666666664c0 -0.5787916666666666 -0.37760416666666663 -1.1388541666666665 -1.0047291666666667 -1.2923124999999998C19.685562499999996 1.2651249999999998 17.792708333333334 0.90625 14.5 0.90625s-5.1855625 0.35887499999999994 -5.9431875 0.5443541666666667c-0.6271249999999999 0.15345833333333334 -1.0047291666666667 0.7135208333333333 -1.0047291666666667 1.2929166666666667V9.0625a0.90625 0.90625 0 0 0 0.5594583333333333 0.8373749999999999Z" stroke-width="1"></path><path id="Union_2" fill="#2859c5" fill-rule="evenodd" d="M20.177958333333333 1.5514999999999999a0.90625 0.90625 0 0 0 -0.5667083333333333 0.5147499999999999 58.822874999999996 58.822874999999996 0 0 1 -0.8458333333333332 1.89225 102.58447916666665 102.58447916666665 0 0 1 -2.366520833333333 4.772916666666666c-2.0269791666666666 3.8340416666666663 -4.860520833333333 8.600916666666667 -8.121208333333334 12.431333333333333a0.90625 0.90625 0 0 0 0.6905625 1.4934999999999998h8.458333333333332a0.90625 0.90625 0 0 0 0.60175 -0.22897916666666665c4.282333333333333 -3.8062499999999995 7.99675 -8.98275 9.306583333333332 -10.891916666666665 0.489375 -0.7135208333333333 0.6168541666666666 -1.652395833333333 0.22897916666666665 -2.4861458333333335 -1.0572916666666665 -2.2710624999999998 -2.723583333333333 -4.117999999999999 -4.095645833333333 -5.383125 -0.7884374999999999 -0.7268125 -1.6270208333333334 -1.4300625 -2.5314583333333336 -2.011875a0.90625 0.90625 0 0 0 -0.7588333333333332 -0.10270833333333333Z" clip-rule="evenodd" stroke-width="1"></path><path id="Union_3" fill="#2859c5" fill-rule="evenodd" d="M8.822041666666665 1.5514999999999999a0.90625 0.90625 0 0 1 0.5667083333333333 0.5147499999999999 56.9415 56.9415 0 0 0 0.8458333333333332 1.89225 102.58447916666665 102.58447916666665 0 0 0 2.366520833333333 4.772916666666666c2.0269791666666666 3.8340416666666663 4.860520833333333 8.600916666666667 8.120604166666666 12.431333333333333a0.90625 0.90625 0 0 1 -0.6899583333333332 1.4934999999999998h-8.458333333333332a0.90625 0.90625 0 0 1 -0.60175 -0.22897916666666665c-4.282333333333333 -3.8062499999999995 -7.99675 -8.98275 -9.306583333333332 -10.891916666666665 -0.489375 -0.7135208333333333 -0.6168541666666666 -1.652395833333333 -0.228375 -2.4861458333333335 1.0566875 -2.2710624999999998 2.7229791666666663 -4.117999999999999 4.095041666666666 -5.383125 0.7884374999999999 -0.7268125 1.6270208333333334 -1.4300625 2.5314583333333336 -2.011875a0.90625 0.90625 0 0 1 0.7588333333333332 -0.10270833333333333Z" clip-rule="evenodd" stroke-width="1"></path><path id="Subtract" fill="#8fbffa" fill-rule="evenodd" d="M6.947916666666666 20.541666666666664c0 -4.171166666666666 3.3809166666666663 -7.552083333333333 7.552083333333333 -7.552083333333333S22.052083333333332 16.3705 22.052083333333332 20.541666666666664 18.671166666666664 28.09375 14.5 28.09375 6.947916666666666 24.712833333333332 6.947916666666666 20.541666666666664Z" clip-rule="evenodd" stroke-width="1"></path><path id="Subtract_2" fill="#2859c5" fill-rule="evenodd" d="m16.082916666666666 18.458499999999997 -0.9122916666666666 -1.7599374999999997a0.7552083333333333 0.7552083333333333 0 0 0 -1.34125 0l-0.9122916666666666 1.7599374999999997 -1.9454166666666666 0.38304166666666667a0.7552083333333333 0.7552083333333333 0 0 0 -0.41566666666666663 1.2457916666666664l1.3823333333333332 1.5376041666666664 -0.25375 2.051145833333333a0.7552083333333333 0.7552083333333333 0 0 0 1.0875 0.7685L14.5 23.58183333333333l1.7279166666666665 0.8627499999999999a0.7552083333333333 0.7552083333333333 0 0 0 1.0868958333333332 -0.7685l-0.25375 -2.051145833333333 1.3829375 -1.5376041666666664a0.7552083333333333 0.7552083333333333 0 0 0 -0.41566666666666663 -1.2457916666666664l-1.9454166666666666 -0.38304166666666667Z" clip-rule="evenodd" stroke-width="1"></path></g></svg>銀牌</th>
+                    <th scope="col"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.94 -0.94 30 30" id="Star-Medal--Streamline-Plump" height="30" width="30"><desc>Star Medal Streamline Icon: https://streamlinehq.com</desc><g id="star-medal--ribbon-reward-like-social-rating-media"><path id="Subtract" fill="#ffffff" d="M14.059999999999999 1.7574999999999998c-4.100833333333333 0 -5.858333333333333 0.5858333333333333 -5.858333333333333 0.5858333333333333v0.28764416666666665c0.008201666666666666 0.0193325 1.0000175 2.381998333333333 2.6942475 5.663836666666666C11.695576666666666 8.23916 12.728400833333334 8.201666666666666 14.059999999999999 8.201666666666666c1.3315991666666667 0 2.364423333333333 0.03749333333333333 3.164085833333333 0.09373333333333334C18.92476 4.998915833333333 19.918333333333333 2.6303916666666667 19.918333333333333 2.6303916666666667L19.918333333333333 2.3433333333333333s-1.7574999999999998 -0.5858333333333333 -5.858333333333333 -0.5858333333333333Z" stroke-width="1.88"></path><path id="Subtract_2" fill="#8fbffa" d="M20.774821666666668 17.245761666666667c2.3726249999999998 -2.6907324999999997 4.250806666666667 -5.3228816666666665 5.097921666666666 -6.5578183333333335 0.31400666666666666 -0.45812166666666665 0.38372083333333334 -1.0392683333333332 0.1493875 -1.5430849999999998C24.107041666666664 5.031136666666666 19.918333333333333 2.3433333333333333 19.918333333333333 2.3433333333333333s-1.9549258333333335 4.661475833333333 -5.075074166666667 10.002518333333335c2.8078991666666666 0.31049166666666667 5.117254166666666 2.2765483333333334 5.9315625 4.89991Z" stroke-width="1.88"></path><path id="Subtract_3" fill="#8fbffa" d="M2.2472566666666665 10.687943333333333c-0.31400666666666666 -0.45812166666666665 -0.38372083333333334 -1.0392683333333332 -0.1493875 -1.5430849999999998C4.012958333333333 5.031136666666666 8.201666666666666 2.3433333333333333 8.201666666666666 2.3433333333333333s1.9549258333333335 4.661475833333333 5.075074166666667 10.002518333333335c-2.8084849999999997 0.3110775 -5.117254166666666 2.2765483333333334 -5.932148333333333 4.89991 -2.3726249999999998 -2.6907324999999997 -4.250220833333334 -5.3228816666666665 -5.096749999999999 -6.5578183333333335Z" stroke-width="1.88"></path><path id="Ellipse 19" fill="#ffffff" d="M7.029999999999999 19.3325a7.029999999999999 7.029999999999999 0 1 0 14.059999999999999 0 7.029999999999999 7.029999999999999 0 1 0 -14.059999999999999 0" stroke-width="1.88"></path><path id="Star 5" fill="#8fbffa" d="M13.409725 15.6066a0.7322916666666667 0.7322916666666667 0 0 1 1.30055 0l0.8846083333333333 1.7059466666666665 1.8863833333333333 0.37141833333333335a0.7322916666666667 0.7322916666666667 0 0 1 0.40305333333333326 1.2079883333333332l-1.3403866666666666 1.4909458333333332 0.24605 1.9889041666666667a0.7322916666666667 0.7322916666666667 0 0 1 -1.0545 0.74518L14.059999999999999 22.280413333333332l-1.6754833333333332 0.8365699999999999a0.7322916666666667 0.7322916666666667 0 0 1 -1.0539141666666667 -0.74518l0.24605 -1.9889041666666667 -1.3409725000000001 -1.4909458333333332a0.7322916666666667 0.7322916666666667 0 0 1 0.40305333333333326 -1.2079883333333332l1.8863833333333333 -0.37141833333333335 0.8846083333333333 -1.7065324999999998Z" stroke-width="1.88"></path><path id="Subtract_4" stroke="#2859c5" stroke-linecap="round" stroke-linejoin="round" d="M8.201666666666666 2.3433333333333333s1.7574999999999998 -0.5858333333333333 5.858333333333333 -0.5858333333333333 5.858333333333333 0.5858333333333333 5.858333333333333 0.5858333333333333M11.040029166666665 8.285440833333334A47.240428333333334 47.240428333333334 0 0 1 14.059999999999999 8.201666666666666c1.2530974999999998 0 2.241398333333333 0.032806666666666665 3.0199708333333333 0.08377416666666666" stroke-width="1.88"></path><path id="Ellipse 18" stroke="#2859c5" stroke-linecap="round" stroke-linejoin="round" d="M7.029999999999999 19.3325a7.029999999999999 7.029999999999999 0 1 0 14.059999999999999 0 7.029999999999999 7.029999999999999 0 1 0 -14.059999999999999 0" stroke-width="1.88"></path><path id="Subtract_5" stroke="#2859c5" stroke-linecap="round" stroke-linejoin="round" d="M20.774821666666668 17.245761666666667c2.3726249999999998 -2.6907324999999997 4.250806666666667 -5.3228816666666665 5.097921666666666 -6.5578183333333335 0.31400666666666666 -0.45812166666666665 0.38372083333333334 -1.0392683333333332 0.1493875 -1.5430849999999998C24.107041666666664 5.031136666666666 19.918333333333333 2.3433333333333333 19.918333333333333 2.3433333333333333s-1.9549258333333335 4.661475833333333 -5.075074166666667 10.002518333333335" stroke-width="1.88"></path><path id="Subtract_6" stroke="#2859c5" stroke-linecap="round" stroke-linejoin="round" d="M13.276740833333333 12.345851666666666C10.1565925 7.004809166666667 8.201666666666666 2.3433333333333333 8.201666666666666 2.3433333333333333S4.012958333333333 5.031136666666666 2.0972833333333334 9.144858333333334c-0.23433333333333334 0.5038166666666667 -0.16461916666666668 1.0849633333333333 0.1493875 1.5430849999999998 0.847115 1.2349366666666668 2.724710833333333 3.8665 5.097335833333333 6.5578183333333335" stroke-width="1.88"></path><path id="Star 4" stroke="#2859c5" stroke-linecap="round" stroke-linejoin="round" d="M13.409725 15.6066a0.7322916666666667 0.7322916666666667 0 0 1 1.30055 0l0.8846083333333333 1.7059466666666665 1.8863833333333333 0.37141833333333335a0.7322916666666667 0.7322916666666667 0 0 1 0.40305333333333326 1.2079883333333332l-1.3403866666666666 1.4909458333333332 0.24546416666666665 1.9889041666666667a0.7322916666666667 0.7322916666666667 0 0 1 -1.0539141666666667 0.74518L14.059999999999999 22.280413333333332l-1.6754833333333332 0.8365699999999999a0.7322916666666667 0.7322916666666667 0 0 1 -1.0545 -0.74518l0.24605 -1.9889041666666667 -1.3403866666666666 -1.4909458333333332a0.7322916666666667 0.7322916666666667 0 0 1 0.40305333333333326 -1.2079883333333332l1.8863833333333333 -0.37141833333333335 0.8846083333333333 -1.7065324999999998Z" stroke-width="1.88"></path></g></svg>銅牌</th>
+                    <th scope="col"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.625 -0.625 30 30" id="Ranking-Stars-Ribbon--Streamline-Ultimate" height="30" width="30"><desc>Ranking Stars Ribbon Streamline Icon: https://streamlinehq.com</desc><path fill="#ff808c" d="M5.764926041666667 20.190046875C5.464728125000001 22.32341666666667 1.1979166666666667 23.390161458333335 1.1979166666666667 23.390161458333335l2.8643984375000002 1.718651041666667 -1.1457593750000001 2.291494791666667s5.155929166666667 -0.5728437500000001 5.155929166666667 -2.8643385416666667c0.0032942708333333335 -0.1514166666666667 -0.024102083333333333 -0.301875 -0.08052395833333334 -0.44227083333333334 -0.056409895833333334 -0.14063541666666668 -0.1406953125 -0.26809375 -0.24774114583333334 -0.3753072916666667 -0.10706979166666668 -0.10697395833333334 -0.23468385416666668 -0.19130729166666668 -0.3751755208333334 -0.2477291666666667 -0.14049166666666668 -0.056302083333333336 -0.29095000000000004 -0.08385416666666667 -0.44231875000000004 -0.0805" stroke-width="1.25"></path><path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M5.764926041666667 20.190046875C5.464728125000001 22.32341666666667 1.1979166666666667 23.390161458333335 1.1979166666666667 23.390161458333335l2.8643984375000002 1.718651041666667 -1.1457593750000001 2.291494791666667s5.155929166666667 -0.5728437500000001 5.155929166666667 -2.8643385416666667c0.0032942708333333335 -0.1514166666666667 -0.024102083333333333 -0.301875 -0.08052395833333334 -0.44227083333333334 -0.056409895833333334 -0.14063541666666668 -0.1406953125 -0.26809375 -0.24774114583333334 -0.3753072916666667 -0.10706979166666668 -0.10697395833333334 -0.23468385416666668 -0.19130729166666668 -0.3751755208333334 -0.2477291666666667 -0.14049166666666668 -0.056302083333333336 -0.29095000000000004 -0.08385416666666667 -0.44231875000000004 -0.0805" stroke-width="1.25"></path><path fill="#ff808c" d="M22.984786458333335 20.190046875c0.3001979166666667 2.1333697916666665 4.5669375 3.2001145833333338 4.5669375 3.2001145833333338l-2.8643385416666667 1.718651041666667 1.1456875000000002 2.291494791666667s-5.155833333333334 -0.5728437500000001 -5.155833333333334 -2.8643385416666667c-0.0033541666666666668 -0.1514166666666667 0.024078125000000002 -0.301875 0.0805 -0.44227083333333334 0.05642187500000001 -0.14063541666666668 0.14075520833333333 -0.26809375 0.2477291666666667 -0.3753072916666667 0.10697395833333334 -0.10697395833333334 0.234671875 -0.19130729166666668 0.3751875 -0.2477291666666667 0.140515625 -0.056302083333333336 0.29097395833333334 -0.08385416666666667 0.44227083333333334 -0.0805" stroke-width="1.25"></path><path stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M22.984786458333335 20.190046875c0.3001979166666667 2.1333697916666665 4.5669375 3.2001145833333338 4.5669375 3.2001145833333338l-2.8643385416666667 1.718651041666667 1.1456875000000002 2.291494791666667s-5.155833333333334 -0.5728437500000001 -5.155833333333334 -2.8643385416666667c-0.0033541666666666668 -0.1514166666666667 0.024078125000000002 -0.301875 0.0805 -0.44227083333333334 0.05642187500000001 -0.14063541666666668 0.14075520833333333 -0.26809375 0.2477291666666667 -0.3753072916666667 0.10697395833333334 -0.10697395833333334 0.234671875 -0.19130729166666668 0.3751875 -0.2477291666666667 0.140515625 -0.056302083333333336 0.29097395833333334 -0.08385416666666667 0.44227083333333334 -0.0805" stroke-width="1.25"></path><path fill="#ffbfc5" stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M14.374760416666668 19.953937500000002c5.7287968750000005 0 7.4474479166666665 3.437302083333334 7.4474479166666665 3.437302083333334l1.9729687500000002 -5.426322916666667c0.09259895833333333 -0.2545572916666667 0.092 -0.5339114583333333 -0.0016770833333333334 -0.7879895833333335 -0.09391666666666668 -0.25431770833333334 -0.2746822916666667 -0.4670677083333334 -0.5104322916666667 -0.6006354166666666 -2.7240625 -1.5213541666666668 -5.788333333333333 -2.3300677083333334 -8.908307291666667 -2.3511510416666668 -3.1200817708333335 0.021083333333333336 -6.184256770833334 0.829796875 -8.90833125 2.3511510416666668 -0.23579791666666666 0.13356770833333334 -0.4166354166666667 0.34631770833333336 -0.5103963541666667 0.6006354166666666 -0.09376093750000002 0.25407812500000004 -0.09439583333333333 0.5334322916666666 -0.0017609375000000001 0.7879895833333335l1.9730046875 5.426322916666667s1.718651041666667 -3.437302083333334 7.447483854166667 -3.437302083333334Z" stroke-width="1.25"></path><path fill="#ffef5e" stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M14.117567708333334 1.5611010416666669c0.140875 -0.2818578125 0.37123437500000006 -0.2818578125 0.512109375 0l1.4631354166666668 2.9251208333333336h3.437302083333334c0.31505208333333334 0 0.35865625 0.14322291666666667 0.09631250000000001 0.3173760416666667l-2.9606510416666665 1.9741546875000002 1.516921875 4.045676041666667c0.114640625 0.29560989583333336 -0.009104166666666667 0.3861244791666667 -0.2646197916666667 0.2028072916666667l-3.543916666666667 -2.5298442708333337 -3.5437848958333333 2.530982291666667c-0.25665364583333333 0.18332916666666668 -0.3758104166666667 0.09166458333333334 -0.26467968750000004 -0.20279531250000002l1.5169697916666667 -4.046826041666667 -2.9606270833333337 -1.9741546875000002c-0.2623796875 -0.175303125 -0.2188354166666667 -0.3173760416666667 0.096240625 -0.3173760416666667h3.4372302083333333l1.4620572916666668 -2.9251208333333336Z" stroke-width="1.25"></path><path fill="#ffef5e" stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M4.968263541666667 5.578206770833333c0.13290885416666667 -0.28529583333333336 0.35060625 -0.28529583333333336 0.484653125 0l1.0942010416666668 2.345365104166667h2.1001875c0.31507604166666664 0 0.39070052083333334 0.18217916666666667 0.16727708333333333 0.4056026041666667L6.9916765625 10.152080208333334l0.7390187500000001 2.5688364583333336c0.08707656250000001 0.30247395833333335 -0.06073437500000001 0.41471875 -0.32884010416666665 0.24748958333333335L5.210015104166668 11.600325520833334 3.0216130208333336 12.96840625c-0.26696770833333333 0.16722916666666668 -0.4147666666666667 0.057260416666666675 -0.32884010416666665 -0.24748958333333335l0.7344427083333334 -2.5688364583333336 -1.8240557291666668 -1.8229057291666668c-0.22228541666666668 -0.22914947916666667 -0.14781093750000002 -0.4056026041666667 0.16727708333333333 -0.4056026041666667h2.1013255208333335l1.0965010416666667 -2.345365104166667Z" stroke-width="1.25"></path><path fill="#ffef5e" stroke="#191919" stroke-linecap="round" stroke-linejoin="round" d="M23.298520833333335 5.578206770833333c0.13284895833333335 -0.28529583333333336 0.35063020833333336 -0.28529583333333336 0.48467708333333337 0l1.0941770833333333 2.345365104166667h2.1001875c0.31505208333333334 0 0.390640625 0.18217916666666667 0.16722916666666668 0.4056026041666667l-1.8228697916666667 1.8229057291666668 0.7344427083333334 2.5688364583333336c0.08708854166666667 0.30247395833333335 -0.06073437500000001 0.41471875 -0.328828125 0.24748958333333335L23.54026041666667 11.600325520833334l-2.1884739583333332 1.3680807291666668c-0.26689583333333333 0.16722916666666668 -0.41471875 0.057260416666666675 -0.328828125 -0.24748958333333335l0.7344427083333334 -2.5688364583333336L19.933333333333334 8.329174479166667c-0.22221354166666668 -0.22914947916666667 -0.14770312500000002 -0.4056026041666667 0.16734895833333333 -0.4056026041666667h2.101265625l1.0965729166666667 -2.345365104166667Z" stroke-width="1.25"></path></svg>總數</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/USA.png" style="width: 40px;">&nbsp;美利堅合衆國</td>
+                    <td>8</td>
+                    <td>13</td>
+                    <td>7</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td><img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/CHN.png" style="width: 40px;">&nbsp;中國</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/HKG.png" style="width: 40px;">&nbsp;中國香港</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td><img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/FRA.png" style="width: 40px;">&nbsp;法國</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td><img src="https://gstatic.olympics.com/s1/t_original/static/noc/oly/3x2/180x120/JPN.png" style="width: 40px;">&nbsp;日本</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>7</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<!-- *赛事简介 -->
+<section class="container01 py-5" id="container01">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="./images/olympics-2024-08-25-185904.png" class="wow fadeInUp" alt="hu"></div>
+        <div class="col-md-6">
+            <div class="hutiaoxiawenzi">
+            <h2 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">——馬爾尚個人項目4戰4勝4破奧運紀錄</h2>
+            <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                在2024年巴黎奧運會周期，萊昂·馬爾尚保持著男子400米個人混合泳的世界紀錄，並且在2022年和2023年蟬聯了世錦賽該項目冠軍。但他唯獨缺少一枚奧運金牌。而今天，他終於如願以償。
+                比賽開始後，雖然距離自己的世界紀錄還有一些距離，但並不影響馬爾尚一路領先，並以4分02秒95的成績打破了邁克爾·菲爾普斯保持的奧運會紀錄。
+                在馬爾尚出場之前，拉德芳斯體育場內的觀眾興奮地高喊著他的名字，並不約而同唱起了《馬賽曲》。當他出場時，人群中爆發出熱烈的歡呼聲，馬爾尚則高舉雙臂，向觀眾揮手致意。
+                在這個項目上，他對於其他選手來說似乎是不可擊敗的存在，整個過程中不斷擴大著領先優勢。確認自己奪冠後，馬爾尚顯得非常激動，不斷地向看臺上的觀眾揮手致意。
+            </p>
+        </div>
+        </div>
+    </div>
+</section>
+<!-- !赛事亮点 -->
+<section class="container02 py-5" id="container02">
+    <div class="row align-items-center">
+        <div class="col-md-6 order-md-2">
+            <img src="http://sports.news.cn/20240806/f40a01b6f2e64a08a1b3336b0f64eda9/fcxXWs991a8994ET.jpg" style="height: 400px; width: 600px;"alt="swim" class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;"></div>
+        <div class="col-md-6 order-md-1">
+            <div class="xueshanwenzi">
+            <h2 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">——潘展樂接力游進46秒創歷史</h2>
+            <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                北京時間8月1日淩晨，2024年巴黎奧運會游泳男子100米自由泳決賽在拉德芳斯進行。中國選手潘展樂（46.40）破世界紀錄奪金，澳大利亞選手查默斯（47.48）摘銀，羅馬尼亞選手大衛·波波維奇（47.49）摘銅。
+決賽中，潘展樂0.62秒反應為全場最快。好的開始是成功的一半，後半程沖刺更強的潘展樂早早確立了優勢，一直領先到比賽結束。46秒40！潘展樂將自己在四天前創造的世界紀錄又提高了0.40秒，為中國隊拿到本屆奧運會首枚金牌。
+            </p>
+        </div>
+        </div>
+    </div>
+</section>
+<!-- !赛事亮点 -->
+<section class="container03 py-5" id="container03">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="https://www.news.gov.hk/chi/2024/08/20240801/20240801_025551_213/images/20240801040520674.jpg" class="wow fadeInUp" alt="hu"></div>
+        <div class="col-md-6">
+            <div class="hutiaoxiawenzi">
+            <h2 class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">何詩蓓分別在女子200米自由泳和女子100米自由泳取得銅牌</h2>
+            <p class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                香港游泳運動員何詩蓓在2024年巴黎奧運會再傳捷報，為香港贏得女子100米自由泳賽事的銅牌。行政長官李家超向何詩蓓和她的教練致以熱烈祝賀。
+                李家超表示，何詩蓓在本屆奧運會一直保持高水平表現，面對世界各地頂尖選手仍毫不畏懼，如今再下一城，締造佳績，他和全港市民都以她為榮。
+                李家超肯定及感謝所有香港運動員在巴黎奧運比賽的努力和付出，他們憑著堅強決心，不畏嚴格訓練，在賽場不論結果全力以赴，各展所長。香港人看見每名運動員對體育的熱愛、不懈努力和付出，均支持及贊揚他們。香港運動員不屈不撓的專業態度和體育精神，使他和香港人引以為傲。
+                文化體育及旅遊局局長楊潤雄也恭賀何詩蓓勇奪銅牌，指她再下一城，盡顯過人實力，為她感到自豪。
+            </p>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="container04 py-5">
+    <div class="row align-items-center">
+        <div class="col-md-6 order-md-2">
+            <img src="https://img.olympics.com/images/image/private/t_s_1_1_g_auto/t_s_w860/f_auto/primary/ojsuigeh2zfgdb2yrdop" style="height: 500px; width: 500px;"alt="swim" class="wow pulse animated" data-wow-delay="300ms" data-wow-iteration="infinite" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-delay: 300ms; animation-iteration-count: infinite; animation-name: pulse;"></div>
+        <div class="col-md-6 order-md-1">
+            <div class="xueshanwenzi">
+            <h2 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">規則概要</h2>
+            <p class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                奧運會的游泳比賽在長度為50米的泳池裏進行。奧運會游泳比賽分為個人賽和接力賽，包含四大泳姿的比賽——蛙泳、蝶泳、仰泳和爬泳；爬泳主要運用在自由泳比賽中，所以爬泳也可以稱為自由泳。男女混合泳接力比賽為第五項賽事，包括所有四種泳姿，運動員要在不同泳姿之間切換。根據游泳比賽距離的不同，運動員所需要的技術也不同。總的來說，爆發力、耐力、體力和技巧都是游泳運動員必須具備的基本素質。
+            </p>
+        </div>
+        </div>
+    </div>
+</section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>聯絡本會: 2014 2014&nbsp;</p>
+                <p class="middle-contect">
+                    <a href="mailto:info@ochk.hk" class="email-link">
+                    info@ochk.hk</a>
+                </p>
+                <div class="footer-icons">
+                        <a href="#" class="footer-icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="footer-icon"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#" class="footer-icon"><i class="fa-brands fa-twitter"></i></a>
+                    
+                </div>
+            </div>
+            <p class="copyright">copyright &copy; 
+                2024 OCHK all right reserved</p>
+        </div>
+    </footer>
+<!-- 引入js轮播lib -->
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script src="./lib/wow/wow.min.js"></script>
+<script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+<script>
+    new WOW({ boxClass: 'wow', animateClass: 'animated', offset: 0, mobile: true, live: true, repeat: true }).init();
+</script>
+<script>
+    $(".testimonial-carousel").owlCarousel({
+autoplay: true,
+autoplayTimeout: 2000,
+smartSpeed: 500,
+// center: true,
+margin: 10,
+dots: true,
+loop: true,
+nav: false,
+responsive: {
+0: {
+  items: 1,
+},
+768: {
+  items: 2,
+},
+992: {
+  items: 3,
+},
+},
+});
+
+(jQuery);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim" crossorigin="anonymous"></script>
+    </body>
+</html>

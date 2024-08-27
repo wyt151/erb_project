@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/UI/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/UI/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/UI/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/membership.css">
+    <title>OCHK Member</title>
+</head>
+<body>
+    <div class="headerNborder">
+        <header class="header">
+            <div class="logo"><a href="./index.html" class="nav-logo">
+                <img src="./images/UI/logo_4c.svg" alt="logo">
+            </a></div>
+            <input type="checkbox" id="burger-menu" class="burger-menu">
+            <label for="burger-menu" class="burger-icon"></label>
+            <nav class="nav">
+                <a href="./index.html" class="nav-link">首頁</a>
+                <a href="./aboutus.html" class="nav-link">介紹本會</a>
+                <a href="./course-info.html" class="nav-link">課程介紹</a>
+                <a href="./facilities.html" class="nav-link">本會設施</a>
+                <a href="./olympics.html" class="nav-link">奧運相關</a>
+                <a href="./login.html" class="btn" >會員登入</a>
+            </nav>
+        </header>
+    <div class="header-border"></div>
+    </div>
+    <main>
+    <div class="mem-intro">
+        <h2>入會須知</h2>
+        <p>本會會籍可由本人親身前來臨本會會址或經網上申請，在會址申請會員證會即時發出，網上申請則在申請日起計5個工作天後發出。</p>
+        <p>申請會籍費用為港幣$130(年費)，所有已繳費用，概不退還。</p>
+        <p>本會有權接納或推卻入會申請，而無須將理由宣佈。會員使用本會設施，需遵照會內一切規則，如會員違反會規，行為品格對會不利，本會有權撤銷會員資格。
+        <p>本會設施及課程只提供予本會會員，所有設施預訂及課程報名，必須具有效會籍。</p>
+        <p>會員會籍的一切權益，衹限本身享用，不得轉讓。</p>
+        <p>退會手續：會員自行退會，須以書面通知本會會員部，所交費用，概不發還。</p>
+        <p>更改通訊方式：會員通訊電話、電郵、地址，如有更改，必須來函通知本會，以便日後聯絡。</p>
+    </div>
+    <div class="mem-f-main-title">
+        <h2>入會表格</h2><span>(<span class="red-star">*號為必填項目</span>)</span>
+        
+    </div>
+    <form class="mem-form" action="./membership_success.html"  method="GET">
+        <div class="mem-f mem-f-basic">
+            <div class="f-title">
+                <h4>基本資料(需與香港身份證相同)</h4>
+            </div>
+            <div class="f-group">
+                <div class="f-label">
+                    <label for="f-surname">英文姓氏<sup class="red-star">*</sup></label>
+                </div>
+                <div class="f-input">
+                    <input type="text" id="f-surname" name="f-surname"  onblur="checkSurname()" required/>
+                </div>
+                <p class="show-alert a1"><sup class="red-star">*</sup>必填</p>
+            </div>
+            <div class="f-group">
+                <div class="f-label">
+                    <label for="f-name">英文名稱<sup class="red-star">*</sup></label>
+                </div>
+                <div class="f-input">
+                    <input type="text" id="f-name" name="f-name" onblur="checkName()" required/>
+                </div>
+                <p class="show-alert a2"><sup class="red-star">*</sup>必填</p>
+            </div>
+            <div class="f-group">
+                <div class="f-label">
+                    <label for="f-cname">中文姓名</label>
+                </div>
+                <div class="f-input">
+                    <input type="text" id="f-cname" name="f-cname"/>
+                </div>
+            </div>
+            <div class="f-group">
+                <div class="f-label">
+                    <label for="f-hkid">身份證號碼<sup class="red-star">*</sup></label>
+                </div>
+                <div class="f-input f-hkid">                    
+                    <input type="text" id="f-hkid" name="f-hkid" minlength="7" maxlength="8" title="例: A123456" onblur="checkHkid()" required />
+                    <span>( </span>
+                    <span class="f-hkid-1"><input type="text" id="f-hkid-1" name="f-hkid-1" title="身份證號碼( )內數字或英文字母" maxlength="1" onblur="checkHkid()" required />
+                    </span><span> )</span>   
+                </div>
+                <p class="show-alert a3"><sup class="red-star">*</sup>必填</p>
+            </div>            
+            <div class="f-group">
+                <div class="f-label">
+                    <label for="f-gender">性別<sup class="red-star">*</sup></label>
+                </div>
+                <div class="f-input-radio">
+                    <input type="radio" name="f-gender" id="male" checked/>
+                    <label for="male">男</label>
+                    <input type="radio" name="f-gender" id="female"/>
+                    <label for="female">女</label>
+                </div>
+            </div>
+            <div class="f-group">
+                <div class="f-label">
+                    <label for="f-birthdate">出生日期<sup class="red-star">*</sup></label>
+                </div>
+                <div class="f-input">
+                    <input type="date" id="f-birthdate" name="f-birthdate" onblur="checkDate()" required />
+                </div>
+                <p class="show-alert a4"><sup class="red-star">*</sup>必填</p>
+            </div>
+        </div>
+        <div class="mem-f mem-f-contact">
+            <div class="f-title">
+                <h4>聯絡方式</h4>
+            </div>
+            <div class="f-group">
+                <div class="f-label">
+                    <label for="f-tel">手機號碼<sup class="red-star">*</sup></label>
+                </div>
+                <div class="f-input">
+                    <span class="f-tel-1">  
+                    <input type="tel" id="f-tel-1" name="f-tel-1" value="852" readonly/>
+                    </span>               
+                    <input type="tel" id="f-tel" name="f-tel" pattern="[0-9]{8}" onblur="checkTel()" required/>                    
+                </div>
+                <p class="show-alert a5"><sup class="red-star">*</sup>必填(請輸入8位數字號碼)</p>
+            </div>
+            <div class="f-group">
+                <div class="f-label">
+                    <label for="f-email-1">電郵地址<sup class="red-star">*</sup></label>
+                </div>
+                <div class="f-input">
+                    <input type="email" id="fEmail1" name="f-email-1"  onblur="checkEmail()" required />
+                </div>
+                <p class="show-alert a6"><sup class="red-star">*</sup>必填</p>
+            </div>
+            <div class="f-group">
+                <div class="f-label">
+                    <label for="f-email-2">確認電郵地址<sup class="red-star">*</sup></label>
+                </div>
+                <div class="f-input">
+                    <input type="email" id="fEmail2" name="f-email-2" onblur="checkEmailMatch()" required />
+                </div>
+                <p class="show-alert not-match"><sup class="red-star">*</sup>電郵地址不相符</p>
+            </div>
+        </div>
+        <div class="mem-f mem-f-address">
+            <div class="f-title">
+                <h4>地址</h4>
+            </div>
+            <div class="f-group">
+                <div class="f-label">
+                    <label for="f-add-rm">室/樓層/座數</label>
+                </div>
+                <div class="f-input">
+                    <input type="text" id="f-add-rm" name="f-add-rm"/>
+                </div>
+            </div>
+            <div class="f-group">
+                <div class="f-label">
+                    <label for="f-add-bldg">大廈/屋苑</label>
+                </div>
+                <div class="f-input">
+                    <input type="text" id="f-add-bldg" name="f-add-bldg"/>
+                </div>
+            </div>
+            <div class="f-group">
+                <div class="f-label">
+                    <label for="f-add-st">街</label>
+                </div>
+                <div class="f-input">
+                    <input type="text" id="f-add-st" name="f-add-st"/>
+                </div>
+            </div>
+            <div class="f-group">
+                <div class="f-label">
+                    <label for="f-add-dist">地區</label>
+                </div>
+                <div class="f-input f-input-dist">
+                    <select id="f-add-dist" name="f-add-dist">
+                        <option value=""></option>
+                        <optgroup label="香港島">
+                            <option value="中西區">中西區</option>
+                            <option value="灣仔">灣仔</option>
+                            <option value="東區">東區</option>
+                            <option value="南區">南區</option>
+                        </optgroup>
+                        <optgroup label="九龍">
+                            <option value="深水埗">深水埗</option>
+                            <option value="油尖旺">油尖旺</option>
+                            <option value="九龍城">九龍城</option>
+                            <option value="黃大仙">黃大仙</option>
+                            <option value="觀塘">觀塘</option>
+                        </optgroup>
+                        <optgroup label="新界">
+                            <option value="沙田">沙田</option>
+                            <option value="大埔">大埔</option>
+                            <option value="北區">北區</option>
+                            <option value="元朗">元朗</option>
+                            <option value="屯門">屯門</option>
+                            <option value="西貢">西貢</option>
+                            <option value="離島">離島</option>
+                            <option value="荃灣">荃灣</option>
+                            <option value="葵青">葵青</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="mem-f mem-f-favsport">
+            <div class="f-title">
+                <h4>最喜愛的運動</h4>
+            </div>
+            <div class="f-input-favsport">
+                <div class="favsport">
+                    <input type="checkbox" id="sport1" name="sport1" value="swimming">
+                    <label for="sport1">游泳</label>
+                </div>
+                <div class="favsport">
+                    <input type="checkbox" id="sport2" name="sport2" value="fencing">
+                    <label for="sport2">劍擊</label>
+                </div>
+                <div class="favsport">
+                    <input type="checkbox" id="sport3" name="sport3" value="badminton">
+                    <label for="sport3">羽毛球</label>
+                </div>
+                <div class="favsport">
+                    <input type="checkbox" id="sport4" name="sport4" value="football">
+                    <label for="sport4">足球</label>
+                </div>
+                <div class="favsport">
+                    <input type="checkbox" id="sport5" name="sport5" value="basketball">
+                    <label for="sport5">籃球</label>
+                </div>
+                <div class="favsport">
+                    <input type="checkbox" id="sport6" name="sport6" value="running">
+                    <label for="sport1">跑步</label>
+                </div>
+                <div class="favsport sport-other">
+                    <label>
+                    <input type="checkbox" id="sport7" name="sport7" value="other" />其他
+                    </label>
+                    <input type="text" id="sportOther" name="sport_other"/>
+                </div>
+            </div>
+        </div>
+        <div class="mem-f mem-f-sub">
+            <div class="f-title">
+                <h4>訂閱通訊</h4>
+            </div>
+            <div class="f-group">
+                <div class="f-input-radio">
+                    <input type="radio" name="f-sub" id="f-sub-t" checked/>
+                    <label for="male">是</label>
+                    <input type="radio" name="f-sub" id="f-sub-f"/>
+                    <label for="female">否</label>
+                </div>
+            </div>
+        </div>
+        <div class="mem-f mem-f-imp-info">
+            <div class="f-title">
+                <h4>重要資訊</h4>
+            </div>
+            <div class="f-imp-info-text">
+                <p>本會設施及課程只提供予本會會員，所有設施預訂及課程報名，必須具有效會籍！</p>
+            </div>
+        </div>
+        <div class="mem-f mem-f-term">
+            <div class="f-title">
+                <h4>通用服務條款協議</h4>
+            </div>
+            <div class="f-term-text">
+<p>
+敬請仔細閱讀本《通用服務條款協議》
+
+如您未滿 18 歲 或受法定監護的人士，於您的父母或法定監護人的同意下，方可使用本服務，而當您使用本服務時，即代表您的父母或合法監護人已經同意接受本協議條款之約束。
+
+1.個人資料
+您知悉並同意：
+1.1 您以任何形式向本會所提供的個人資料，本會將用作本會或協辦人士和團體於接受，管理及推廣會籍申請，預訂各項康樂設施及體育活動之用。
+1.2 您所提供的個人資料，可能會為上文第一段所述目的而向政府部門，協辦人士團體披露。
+1.3 您所提供之資料將用作本會處理申請之用，如您未能提供全部資料，可能導致您的申請被延誤或拒絕。
+1.4 根據個人資料(私隱)條例第18及22條，以及附表1第6原則的規定，您有權查閱及改正個人資料，您查閱資料的權利，包括有權索取您在本會網站內所提供的個人資料的副本。
+1.5 如您並不希望本會使用本會網站內的資料作本會或協辦人士或團體作推廣服務之用，請以書面或電郵通知本會。
+
+2. 費用和付款
+2.1 支付過程是由一個第三方電子支付服務供應商提供的。個人資料及信用卡資料均由第三方服務供應商收集及存取。對於使用該服務直接或間接引起的任何損失或損害（包括後果損失），本會不會承擔任何責任。
+2.2 申請會籍、購買產品及/或服務時須即時付款。您同意在購買服務時付清所有費用，付款一經確認，除非條文另有說明，否則本會不能作岀任何更改、取消、退款或退貨的安排。
+
+3. 責任限制
+3.1 您明白及同意遵守本會會章、會規及各部門附例，而您的健康及體能良好並適宜參加由本會舉辦之活動/課程/訓練班及承擔有關風險。您同意如您因參加有關活動/課程/訓 練班而引致受傷/死亡或財物損失，本會及/或其主管人員無需負任何責任。
+3.2 本會及/或其部門保留自行決策的權力。如有任何爭議，以本會的決定為最終決定。
+</p>  
+            </div>
+            <div class="f-term-confirm">
+                <input type="radio" name="f-term" id="f-term" oninvalid="setCustomValidity('請先閱讀通用服務條款協議');" oninput="setCustomValidity('');" required/>
+                    <label for="f-term">本人已閱讀，明白並同意上述條款協議<sup class="red-star">*</sup></label>
+                    <!-- <p class="show-alert a6"><sup class="red-star">*</sup>必填</p> -->
+            </div>
+            <div class="f-sub-btn">
+                <input type="submit" value="下一步" class="sub-btn">
+                <input type="reset" value="清除" class="sub-btn">
+
+            </div>
+        </div>   
+    </form>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-text">
+                <p>聯絡本會: 2014 2014</p>
+                <p class="middle-contect">
+                    <a href="mailto:info@ochk.hk" class="email-link">
+                    info@ochk.hk</a>
+                </p>
+                <div class="footer-icons">
+                        <a href="#" class="footer-icon"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="footer-icon"><i class="fa-brands fa-square-instagram"></i></a>                   
+                        <a href="#" class="footer-icon"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <p class="copyright">copyright &copy; 
+                2024 OCHK all right reserved</p>
+        </div>
+    </footer>
+</body>
+
+<script src="./js/memberform.js"></script>
+
+</html>
