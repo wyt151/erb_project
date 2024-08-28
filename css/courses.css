@@ -242,6 +242,9 @@ nav {
 .footer-content{
     padding: 10px;
     color:var(--clr-white);
+}
+
+.footer-content p {
     font-size: 1rem;
 }
 
@@ -295,14 +298,15 @@ nav {
 /* personal CSS below */ 
 section{
     /* margin-top:80px; */
-    max-width: 1200px;
-    margin-bottom: 5rem;
+    /* max-width: 1200px; */
+    /* margin-bottom: 5rem; */
 }
 
 .container{
     align-items: center;
     text-align: center;
     max-width: 1200px;
+    padding-bottom: 5rem;
     /* min-height: 100vh; */
     /* margin-bottom: 5rem; */
 }
@@ -457,10 +461,11 @@ ol.breadcrumb .breadcrumb-item::before {
 /* bootstrap version */
 
 /* know-more */
-/* .our-courses{
-    background-image: url('./');
+.our-courses{
+    /* background-image: url('./'); */
     -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, .3));
-} */
+}
+
 .know-more-title{
     margin-top: 1rem;
     display:inline-block;
@@ -552,12 +557,15 @@ tr:hover {
     background-image: url("../images/ourcourses-infov4.jpg");
     background-repeat:repeat-x;
     background-position:bottom;
+    height: 100%;
     margin:0;
     padding:0;
 }
 .courses{
     display:flex;
     justify-content: center;
+    height: 100%;
+
 }
 .course{
     margin: 5rem;
@@ -569,6 +577,7 @@ tr:hover {
     box-shadow: 
         2px 2px 4px rgba(0, 0, 0, 0.2),
         -2px -2px 4px rgba(255, 255, 255, 0.8);
+    height: 100%;
 }
 .course:hover{
     background-color:var(--clr-green-1);

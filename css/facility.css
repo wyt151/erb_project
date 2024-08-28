@@ -318,6 +318,12 @@ main {
     padding: 4rem;
 }
 
+@media screen and (max-width:576px) {
+    .fac-details{
+        padding: 2rem 0.5rem;
+    }
+}
+
 .sec-swim{
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)),url("../images/facilities_swimming_pool.jpg") center/cover no-repeat;
 }

@@ -136,7 +136,6 @@ nav {
     font-weight: bold;
     box-shadow: 3px 3px 0 0 white,6px 6px 0 0 var(--clr-purple-3);
     transform: translate(-2px,-2px);
-
 }
 
 .header-border{
@@ -329,6 +328,13 @@ main {
     width: 21rem;
     height: 14rem;
     border-radius: var(--radius);
+}
+
+@media screen and (max-width:576px) {
+    .sec-title, .facilities {
+        padding: 2rem auto;
+        gap:2rem;
+    }
 }
 
 .fac-title {

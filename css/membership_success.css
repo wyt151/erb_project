@@ -271,7 +271,7 @@ main {
 }
 
 @media screen and (max-width:576px) {
-    .container {
-        padding: 1rem auto;
+    .content {
+        padding: 0.5rem auto;
     }
 }

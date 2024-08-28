@@ -195,7 +195,7 @@ nav {
     min-height: 100vh;
     /* min-height: 50vh;
     max-height: 200px; */
-    background: var(--clr-primary-7);
+    background: var(--clr-pink-4);
     display:flex;
     justify-content: center;
     align-items: center;
