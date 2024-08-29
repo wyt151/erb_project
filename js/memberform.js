@@ -93,3 +93,16 @@ if (email1 !== email2) {
 y.style.visibility = "hidden";
 };
 }
+
+const form = document.getElementById("mem-form");
+function onSubmit(e) {
+const item1 = document.getElementById("fEmail1").value;
+const item2 = document.getElementById("fEmail2").value;
+if (item1 !== item2){
+    document.getElementById("fEmail2").focus();
+    alert("電郵地址不相符");
+    e.preventDefault();
+    return;
+    } 
+}
+form.addEventListener("submit",onSubmit);
